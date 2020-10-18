@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Poppins Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="./quiz.css">
+        <title>Quiz - Gurukul</title>
+	</head>
+    
+    
+    <body>
+
+        <div class="wrapper">
+
+            <!--Main Right Hand Side Part Goes Here-->
+            <div class="main">
+
+                <!--Top navbar-->
+                <nav class="navbar navbar-expand-lg navbar-dark " style="height: 70px;">
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					</button>
+						
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+								<a class="nav-link active" href="#">Physics</a>
+							</li>
+							<li class="nav-item">
+	    						<a class="nav-link" href="#">Chemistry</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Maths</a>
+                            </li>
+                        </ul>
+					</div>
+                </nav>
+                <!--Main Section Goes here-->
+                <div class="question-section">
+                    
+                </div>
+                <div class="question-option">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">C</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">D</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="question-footer">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Mark For Review And Next</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Save and Next</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="question-part">
+                <div class="timer">
+                    <p class="timerempara">360s</p>
+                </div>
+                <div class="maha">
+                    <div class="questions">
+                        <ul class="navbar-nav mr-auto questionaire">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">4</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto questionaire">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">6</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">7</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">8</a>
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div class="options">
+                        <button class="btn btn-info">Submit</button>
+                        <button class="btn btn-info">Instructions</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none!important;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .main{
+    overflow-x: hidden;
+    width: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper .main .navbar{
+    height: 70px;
+    width: 100%;
+    color: #000;
+    background: #f3f4f7;
+}
+
+.wrapper .main .navbar div ul li.nav-item a.nav-link{
+    color: black!important;
+    margin: 10px;
+    padding: 8px 20px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.wrapper .main .navbar div ul li.nav-item a.active.nav-link,
+.wrapper .main .navbar div ul li.nav-item:hover a.nav-link{
+    color: #fff!important;
+    background-color: #37325A;
+}
+
+.wrapper .main .question-option{
+    height: 70px;
+    width: 100%;
+}
+
+.wrapper .main .question-option ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-evenly;
+}
+
+.wrapper .main .question-option ul li a.nav-link{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    color: black;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.wrapper .main .question-option ul li:hover a.nav-link,
+.wrapper .main .question-option ul li a.nav-link.active{
+    background-color: aqua;
+}
+
+.wrapper .main .question-footer{
+    height: 70px;
+    width: 100%;
+}
+
+.wrapper .main .question-footer ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-evenly;
+}
+
+.wrapper .main .question-footer ul li a.nav-link{
+    color: black;
+    width: auto;
+    padding: 8px 40px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .main .question-footer ul li:last-child a.nav-link{
+    color: white!important;
+    background-color: chartreuse; 
+}
+
+.wrapper .main .question-footer ul li:first-child:hover a.nav-link{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+
+
+
+
+.wrapper .question-part{
+    background-color: whitesmoke;
+    width: 500px;
+}
+
+.timer{
+    height: 100px;
+}
+.timerempara{
+    font-size: 30px;
+}
+
+.questionaire{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    background-color:#F5F5F5;
+    text-align:centre;
+    height:60px;
+}
+.questionaire li{
+   height:50px;
+   width:50px;
+   margin:20px;
+}
+.questionaire .nav-link{
+    font-size:120%;
+    background-color:chartreuse;
+    color:white;
+    padding:5px;
+    box-shadow:1px 1px black;
+    text-align:center;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+}
+
+.options{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+.options .btn{
+    color: white !important;
+    background-color:#FF0000 !important;
+    font-size:150%;
+    box-shadow:0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.questions ul{
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+.maha{
+    height: calc(100vh - 100px);
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+</style>
+
